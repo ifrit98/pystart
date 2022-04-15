@@ -3,6 +3,6 @@
 path=$(readlink -e ~/)
 path=$path"/pystart.py"
 
-cp ./pystart.py ~/pystart.py
-chmod +x ~/pystart.py
+cp ./pystart.py $path
+chmod +x $path
 export "PYTHONSTARTUP=$path"
