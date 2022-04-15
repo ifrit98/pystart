@@ -1,3 +1,8 @@
+#!/bin/bash
+
+path=$(readlink -e ~/)
+path=$path"/pystart.py"
+
 cp ./pystart.py ~/pystart.py
 chmod +x ~/pystart.py
-echo "PYTHONSTARTUP='~/pystart.py'" >> ~/.bashrc
+export "PYTHONSTARTUP=$path"
